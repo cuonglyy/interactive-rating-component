@@ -5,23 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylehseet" href="./styles/styles.css">
+  <script src="./app.js" defer></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Rating state start -->
+  <main class="container">
+    <div id="rating-state">
+      <img src="./images/icon-star.svg" alt="star icon">
+      <h1>How did we do?</h1>
 
-  How did we do?
+      <p class="text">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <div class="btns">
+        <button class="btn" value="1">1</button>
+        <button class="btn" value="2">2</button>
+        <button class="btn" value="3">3</button>
+        <button class="btn" value="4">4</button>
+        <button class="btn" value="5">5</button>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+    </div>
+  </main>
 
   1 2 3 4 5
 
@@ -31,12 +45,14 @@
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <!-----------------------
+  You selected (Add rating here) out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
+  -------------------------->
 
   <!-- Thank you state end -->
 
