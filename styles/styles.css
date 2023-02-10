@@ -98,6 +98,7 @@ body {
 
 .btn.active {
     background-color: var(--light-grey);
+    color: var(--white);
 }
 
 .form__submit-btn {
