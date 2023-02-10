@@ -29,6 +29,11 @@ body {
     min-height: 100vh;
 }
 
+
+/*
+    =========================== MOBILE FIRST DESIGN ===========================
+*/
+
 #card-container {
     max-width: 32.7rem;
     background: radial-gradient(98.96% 98.96% at 50% 0%, hsla(215, 20%, 17%, 1), hsla(215, 24%, 12%, 1));
@@ -67,11 +72,31 @@ body {
 }
 
 .btns {
+    display: flex;
     margin-bottom: 2.4rem;
+    width: 27.9rem;
+    justify-content: space-between;
+    gap: 1.7rem;
+}
+
+.btn {
+    padding: 1rem 1.8rem;
+    border-radius: 50%;
+    border: none;
+    flex: 1;
 }
 
 .submit-btn {
-    
+    display: block;
+    margin: 0 auto;
+    border-radius: 2.2rem;
+    border: none;
+    padding: 1.2rem 10.8rem;
+    color: var(--white);
+    background-color: var(--orange);
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
 }
 
 
