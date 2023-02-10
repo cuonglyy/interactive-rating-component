@@ -1,3 +1,82 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+}
+
+#card-container {
+    max-width: 32.7rem;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, hsla(215, 20%, 17%, 1), hsla(215, 24%, 12%, 1));
+    color: var(--white);
+    border-radius: 3rem;
+}
+
+
+
+
+
+/*
+    ============= RATING STATE STYLING =============
+*/
+
+#rating-state {
+    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+}
+
+.icon-star {
+    background-color: var(--dark-blue);
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+
+.header {
+    font-size: 2.4rem;
+    margin: 1.6rem 0 1rem 0;
+}
+
+.text {
+    color: var(--light-grey);
+    line-height: 2.2rem;
+    width: 27.9rem;
+    margin-bottom: 2.4rem;
+}
+
+.btns {
+    margin-bottom: 2.4rem;
+}
+
+.submit-btn {
+    
+}
+
+
+
+
 
 /*
     =============== FOOTER ================
@@ -6,6 +85,7 @@
 footer {
     font-size: 11px;
     text-align: center;
+    color: white;
 }
 
 footer a {
