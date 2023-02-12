@@ -2,6 +2,9 @@ const form = document.querySelector('.rating-form');
 const formBtns = document.querySelectorAll('.btn');
 const submitBtn = document.querySelector('.form__submit-btn');
 const ratingState = document.querySelector('#rating-state');
+const thankState = document.querySelector('#thanks-state');
+const ratingValue = document.querySelector('#rating-value');
+const formBtnsArr = Array.from(formBtns);
 
 
 
@@ -19,16 +22,18 @@ const selectRating = (e) => {
 
     e.target.classList.add('active');
     localStorage.setItem('ratingValue', e.target.value);
-    console.log(localStorage.getItem('ratingValue'));
 }
 
-const switchState = (e) => {
-    ratingState.style.display = 'none';
-
+const switchState = () => {
+    if(formBtnsArr.some(btn => btn.classList.contains('active'))) {
+        ratingState.style.display = 'none';
+        thankState.style.display ='block';
+    }
 }
 
 const submitForm = (e) => {
     e.preventDefault();
+    ratingValue.textContent = localStorage.getItem('ratingValue');
 }
 
 
