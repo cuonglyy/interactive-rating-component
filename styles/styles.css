@@ -50,6 +50,7 @@ body {
 */
 
 #rating-state {
+    display: none;
     padding: 2.4rem 2.4rem 3.2rem 2.4rem;
 }
 
@@ -120,6 +121,17 @@ body {
     background-color: var(--white);
     transition: all .1s ease;
 }
+
+
+
+/*
+    ============= THANK YOU STATE STYLING =============
+*/
+#thanks-state {
+    padding: 3.4rem 2.4rem 3.7rem 2.4rem;
+}
+
+
 
 
 
