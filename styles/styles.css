@@ -35,14 +35,12 @@ body {
 */
 
 #card-container {
+    width: 100%;
     max-width: 32.7rem;
     background: radial-gradient(98.96% 98.96% at 50% 0%, hsla(215, 20%, 17%, 1), hsla(215, 24%, 12%, 1));
     color: var(--white);
     border-radius: 3rem;
 }
-
-
-
 
 
 /*
@@ -166,7 +164,7 @@ body {
 
 
 /*
-    =============== FOOTER ================
+    ============= FOOTER =============
 */
 
 footer {
@@ -181,4 +179,26 @@ footer {
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+/*
+    =========================== DESKTOP DESIGN ===========================
+*/
+
+@media screen and (min-width: 680px) {
+
+    #card-container {
+        max-width: 41.2rem;
+    }
+
+    #rating-state {
+        padding: 3.2rem 3.9rem 3.2rem 3.2rem;
+    }
+
+    .header {
+        font-size: 2.8rem;
+        margin: 3rem 0 .7rem 0;
+    }
 }
