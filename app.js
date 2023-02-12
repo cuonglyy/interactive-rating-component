@@ -24,6 +24,7 @@ const selectRating = (e) => {
 
 const switchState = (e) => {
     ratingState.style.display = 'none';
+
 }
 
 const submitForm = (e) => {
