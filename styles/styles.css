@@ -65,7 +65,6 @@ body {
 .text {
     color: var(--light-grey);
     line-height: 2.2rem;
-    width: 27.9rem;
     margin-bottom: 2.4rem;
     font-size: 1.4rem;
 }
@@ -73,7 +72,6 @@ body {
 .form__btns {
     display: flex;
     margin-bottom: 2.4rem;
-    width: 27.9rem;
     justify-content: space-between;
 }
 
@@ -188,7 +186,9 @@ footer a {
 */
 
 @media screen and (min-width: 680px) {
-
+/*
+    ============= RATING STATE STYLING =============
+*/
     #card-container {
         max-width: 41.2rem;
     }
@@ -199,6 +199,62 @@ footer a {
 
     .header {
         font-size: 2.8rem;
-        margin: 3rem 0 .7rem 0;
+        margin-top: 3rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        margin: .7rem auto 2.4rem auto;
+        line-height: 2.6rem;
+    }
+
+    .form__btns {
+        margin: 0 auto 3.2rem auto;
+    }
+
+    .btn {
+        width: 5.1rem;
+        height: 5.1rem;
+        font-size: 1.6rem;
+    }
+
+    .form__submit-btn {
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        padding: 1.1rem 13.7rem;
+    }
+
+
+/*
+    ============= THANK YOU STATE STYLING =============
+*/
+    #thanks-state {
+        padding: 4.5rem 3.6rem;
+    }
+
+    .ty-img {
+        width: 16.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .selection-result {
+        font-size: 1.5rem;
+        width: 19.3rem;
+        line-height: 2.4rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .ty-header {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+        margin-bottom: .7rem;
+    }
+
+    .ty-content {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
     }
 }
+
+
+
